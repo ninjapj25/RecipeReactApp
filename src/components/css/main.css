@@ -98,7 +98,7 @@ nav {
   width: 350px;
   height: 50px;
   bottom: 100px;
-  left: 650px;
+  left: 50%;
   display: flex;
   flex-flow: row wrap;
 }
@@ -110,6 +110,8 @@ nav {
 }
 
 .recipe-form input {
+  position: relative;
+  left: -50%;
   width: 100%;
   border-radius: 15px;
   border: 5px solid #755139;
@@ -138,6 +140,8 @@ nav {
   border: 3px solid #f2edd7;
   margin: 10px auto 80px;
   cursor: pointer;
+  position: relative;
+  left: -50%;
 }
 
 .recipe-prompt h3 {
@@ -147,25 +151,13 @@ nav {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media only screen and (max-width: 1440px) {
-  .recipe-form {
-    left: 560px;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
-  .recipe-form {
-    left: 360px;
-  }
   .recipe-prompt h3 {
     font-size: 3em;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .recipe-form {
-    left: 230px;
-  }
   .recipe-prompt h3 {
     font-size: 2.5em;
   }
@@ -180,18 +172,13 @@ nav {
     font-size: 0.8em;
     max-height: 180px;
   }
-  .recipe-form {
-    left: 50px;
-  }
+
   .recipe-prompt h3 {
     font-size: 1.5em;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  .recipe-form {
-    left: 35px;
-  }
   .recipe-form input {
     width: 85%;
     height: 40px;
@@ -199,17 +186,5 @@ nav {
 
   .recipe-form button {
     margin: 10px 0 0 80px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .recipe-form {
-    left: 30px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .recipe-form {
-    left: 10px;
   }
 }
